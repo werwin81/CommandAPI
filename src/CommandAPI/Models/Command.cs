@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace CommandAPI.Models
 {
     public class Command
@@ -9,7 +11,7 @@ namespace CommandAPI.Models
         [MaxLength(250)]
         public string HowTo { get; set; }
         [Required]
-        public string Plafrom { get; set; }
+        public string Platform { get; set; }
         [Required]
         public string CommandLine { get; set; }
     }
